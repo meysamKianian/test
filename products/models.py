@@ -6,7 +6,7 @@ from django.urls import reverse
 class Product(models.Model):
     title = models.CharField(max_length=120)
     description = models.TextField()
-    summary = models.TextField(default='سلام وقت بخیر')
+    summary = models.TextField(default='سلام وقت شما بخیر')
     price = models.TextField(default='nui')
 
     def get_absolute_url(self):
